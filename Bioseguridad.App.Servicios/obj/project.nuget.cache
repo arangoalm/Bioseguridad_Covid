@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KbPrV2EYlHzvlCqxB/CvCtvjHtcZDoZEIUS3UmaltW2lmj1Rm2rtxMW3OkB4yLH5n471N/kfnxQvU6XhC9zoIA==",
+  "success": true,
+  "projectFilePath": "E:\\misiontic\\developer\\Proyectos\\BioseguridadApp\\Bioseguridad.App\\Bioseguridad.App.Servicios\\Bioseguridad.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\almeiro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\almeiro\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\almeiro\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\almeiro\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\almeiro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\almeiro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
