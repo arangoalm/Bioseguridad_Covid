@@ -11,7 +11,8 @@ namespace Bioseguridad.App.Persistencia
         {
             _appContext = appContext;
         }
-
+//CRUD
+//GET
         IEnumerable<Asesor> IRepositorioAsesor.GetAllAsesores()
         {
             return _appContext.asesores;
@@ -22,14 +23,14 @@ namespace Bioseguridad.App.Persistencia
             var asesorEncontrado = _appContext.asesores.FirstOrDefault(p => a.id ==idAsesor);
             return asesorEncontrado;
         }
-
+//ADD
         Asesor IRepositorioAsesor.AddAsesor(Asesor asesor)
         {
             var asesorAdicionado = _appContext.asesores.Add(asesor);
             _appContext.SaveChange();
             return asesorAdicionado.EntityFrameworkCore;
         }
-
+//Update
         Asesor IRepositorioAsesor.UpdateAsesor(Asesor asesor)
         {
             var asesorEncontrado = _appContext.asesores.FirstOrDefault(a => a.id==idAsesor);
@@ -47,6 +48,7 @@ namespace Bioseguridad.App.Persistencia
             }
             return asesorEncontrado;
         }
+//Delelte        
         void IRepositorioAsesor.DeleteAsesor(int idAsesor)
         {
             var asesorEncontrado = _appContext.asesores.FirstOrDefault(a=>a.id==idAsesor);
