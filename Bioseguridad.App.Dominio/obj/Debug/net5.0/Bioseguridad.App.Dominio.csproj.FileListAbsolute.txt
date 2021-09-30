@@ -1,0 +1,12 @@
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.csproj.AssemblyReference.cache
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.AssemblyInfoInputs.cache
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.AssemblyInfo.cs
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.csproj.CoreCompileInputs.cache
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\bin\Debug\net5.0\Bioseguridad.App.Dominio.deps.json
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\bin\Debug\net5.0\Bioseguridad.App.Dominio.dll
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\bin\Debug\net5.0\ref\Bioseguridad.App.Dominio.dll
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\bin\Debug\net5.0\Bioseguridad.App.Dominio.pdb
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.dll
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\ref\Bioseguridad.App.Dominio.dll
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Dominio\obj\Debug\net5.0\Bioseguridad.App.Dominio.pdb
