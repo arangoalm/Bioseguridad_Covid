@@ -12,7 +12,7 @@ namespace Bioseguridad.App.Dominio
         public int identificacion {get;set;}
         public int edad {get;set;}
         public string profesion {get;set;}
-        public Oficina oficina {get;set;}
+        
         
     }
 }
