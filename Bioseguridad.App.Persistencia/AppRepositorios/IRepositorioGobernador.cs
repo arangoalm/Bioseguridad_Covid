@@ -6,9 +6,9 @@ namespace Bioseguridad.App.Persistencia
     public interface IRepositorioGobernador
     {
         IEnumerable<Gobernador> GetAllGobernadores();
-        Asesor GetGobernador(int idGobernador);
-        Asesor AddGobernador(Gobernador gobernador);
-        Asesor UpdateGobernador(Gobernador gobernador);
+        Gobernador GetGobernador(int idGobernador);
+        Gobernador AddGobernador(Gobernador gobernador);
+        Gobernador UpdateGobernador(Gobernador gobernador);
         void DeleteGobernador(int idGobernador);
 
     }
