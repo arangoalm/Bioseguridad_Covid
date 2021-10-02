@@ -1,5 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    
+    <ProjectReference Include="..\Bioseguridad.App.Persistencia\Bioseguridad.App.Persistencia.csproj" />
+    
+    <ProjectReference Include="..\Bioseguridad.App.Consola\Bioseguridad.App.Consola.csproj" />
+    
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>

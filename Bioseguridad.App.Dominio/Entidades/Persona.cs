@@ -5,7 +5,7 @@ namespace Bioseguridad.App.Dominio
  
     public class Persona
     {
-        // Identificador único de cada persona
+        //Identificador único de cada persona
         public int id {get;set;}
         public string nombre {get;set;}
         public string apellidos {get;set;}

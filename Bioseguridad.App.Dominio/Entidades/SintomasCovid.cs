@@ -3,6 +3,7 @@ namespace Bioseguridad.App.Dominio
     public class SintomasCovid
     {
         //public int id {get;set;}
+        public int id {get;set;}
         public bool fiebre {get;set;}
         public bool perdidaOlfato {get;set;}
         public bool perdidaGusto {get;set;}
