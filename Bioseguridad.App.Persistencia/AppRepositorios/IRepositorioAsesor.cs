@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Bioseguridad.App.Dominio;
 
+
 namespace Bioseguridad.App.Persistencia
 {
     public interface IRepositorioAsesor
@@ -9,7 +10,7 @@ namespace Bioseguridad.App.Persistencia
         Asesor GetAsesor(int idAsesor);
         Asesor AddAsesor(Asesor asesor);
         Asesor UpdateAsesor(Asesor asesor);
-        void DeleteAsesor(int idAsesor);
+        bool DeleteAsesor(int idAsesor);
 
     }
 }

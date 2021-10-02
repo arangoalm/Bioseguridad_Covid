@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bioseguridad.App.Dominio\Bioseguridad.App.Dominio.csproj" />
+    <ProjectReference Include="..\Bioseguridad.App.Dominio\Bioseguridad.App.Consola.csproj" />
   </ItemGroup>
 
 </Project>

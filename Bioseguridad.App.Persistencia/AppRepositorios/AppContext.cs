@@ -16,5 +16,13 @@ namespace Bioseguridad.App.Persistencia
         public DbSet<PersonalAseo> personalAseo {get;set;}
         public DbSet<ProveedorServicio> proveedorServicios {get;set;}
         public DbSet<SecretarioDespacho> secretarioDespacho {get;set;}
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if(!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Data Source =(localdb)\\MSSQLLocalDB; Initial Catalog = BioseguridadCovid");
+            }
+        }
     }
 }

@@ -1,0 +1,5 @@
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Consola\obj\Debug\net5.0\Bioseguridad.App.Consola.csproj.AssemblyReference.cache
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Consola\obj\Debug\net5.0\Bioseguridad.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Consola\obj\Debug\net5.0\Bioseguridad.App.Consola.AssemblyInfoInputs.cache
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Consola\obj\Debug\net5.0\Bioseguridad.App.Consola.AssemblyInfo.cs
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Consola\obj\Debug\net5.0\Bioseguridad.App.Consola.csproj.CoreCompileInputs.cache

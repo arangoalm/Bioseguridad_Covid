@@ -49,13 +49,14 @@ namespace Bioseguridad.App.Persistencia
             return asesorEncontrado;
         }
 //Delelte        
-        void IRepositorioAsesor.DeleteAsesor(int idAsesor)
+        bool IRepositorioAsesor.DeleteAsesor(int idAsesor)
         {
             var asesorEncontrado = _appContext.asesores.FirstOrDefault(a=>a.id==idAsesor);
             if (asesorEncontrado == null)
-                return;
+                return false;
             _appContext.asesores.Remove(asesorEncontrado);
             _appContext.SaveChange();
+            return true;
         }
     }
 }
