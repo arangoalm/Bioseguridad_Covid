@@ -11,11 +11,12 @@ namespace Bioseguridad.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AdicionarAsesor();
-            ActualizarAsesor(1);
+            //AdicionarAsesor();
+            //ActualizarAsesor(1);
             EncontrarAsesor(1);
             EncontrarAsesores();
-            EliminarAsesor(1);
+            //EliminarAsesor(1);
+            Console.WriteLine("Se va a crear una nueva version");
 
         }
     //CRUD
