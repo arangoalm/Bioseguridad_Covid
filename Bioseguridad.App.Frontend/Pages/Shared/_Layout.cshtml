@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Bioseguridad.App.Frontend</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
     <header>
@@ -28,18 +29,25 @@
                 </div>
             </div>
         </nav>
-    </header>
+            <header>
+                <div class="text-center">
+                    <h1 class="display-4">Sistema de control de Bioseguridad Covid</h1>
+                    <p>Mas información <a href="https://caldas.gov.co/">Gobernación de Caldas - Unidos es Posible</a>.</p>
+                </div>
+            </header> 
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Bioseguridad.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2021 - Bioseguridad.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
+                </div>
+            </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -72,43 +72,42 @@ body {
 
 /* maquetacion  */
 
-html,body {
-	height:100%;
+#main-content{
+  width: 1200px;
+  margin: 20px auto;
+  height: 900px;
 }
-
-header {
-		
-	display:block;
-	background:#286af0;
-	padding:10px 0px;
+header{
+  background-color: skyblue;
+  width: 1200px;
+  height: 100px;   
+  float:left;    
 }
-section {
-	width: 79%;
-	background: #ccc;
-	float: left;
-	overflow: auto;
-	padding-bottom: 60px;
-	padding-top:30px;
+nav{
+  background-color: coral;
+  width: 1200px;
+  height: 50px;
+  float:left;
+  margin-top:4px;
+  margin-bottom: 4px;
 }
-
-aside {
-	float: right;
-	border: 1px solid red;
-	width: 19%;
-	border: 1px solid red;
-	/*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
-	/*visibility: hidden;*/
+sidebar{
+  background-color: pink;
+  width: 300px;
+  min-height: 600px; 
+  float:left;
+  margin-right: 4px;
 }
-footer {
-	position: relative;
-	margin-top: -50px;
-	height: 40px; 
-	padding:5px 0px;
-	clear: both;
-	background: #286af0;
-	text-align: center;
-	color: #fff;
+content{
+  background-color: darkseagreen;
+  width: 896px;
+  min-height: 600px;
+  float:left;
 }
-figure {
-	display: table; margin: 0 auto;
+footer{
+  background-color: burlywood;
+  width: 1200px;
+  height: 80px;  
+  float:left;
+  margin-top:4px;
 }
