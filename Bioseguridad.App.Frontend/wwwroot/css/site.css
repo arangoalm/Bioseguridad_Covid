@@ -78,13 +78,13 @@ body {
   height: 900px;
 }
 header{
-  background-color: skyblue;
+  background-color: rgb(252, 252, 252);
   width: 1200px;
   height: 100px;   
   float:left;    
 }
 nav{
-  background-color: coral;
+  background-color: rgb(252, 250, 249);
   width: 1200px;
   height: 50px;
   float:left;
@@ -92,20 +92,20 @@ nav{
   margin-bottom: 4px;
 }
 sidebar{
-  background-color: pink;
+  background-color: rgb(255, 254, 254);
   width: 300px;
   min-height: 600px; 
   float:left;
   margin-right: 4px;
 }
 content{
-  background-color: darkseagreen;
+  background-color: rgb(249, 252, 249);
   width: 896px;
   min-height: 600px;
   float:left;
 }
 footer{
-  background-color: burlywood;
+  background-color: rgb(255, 255, 255);
   width: 1200px;
   height: 80px;  
   float:left;
