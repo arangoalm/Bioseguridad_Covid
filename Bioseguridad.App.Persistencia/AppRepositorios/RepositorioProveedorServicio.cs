@@ -52,10 +52,10 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioProveedorServicio.DeleteProveedorServicio(int idProveedorServicio)
         {
-            var personaEncontrado = _appContext.personaes.FirstOrDefault(a=>a.id==idProveedorServicio);
+            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(a=>a.id==idProveedorServicio);
             if (personaEncontrado == null)
                 return;
-            _appContext.personaes.Remove(personaEncontrado);
+            _appContext.proveedorServicios.Remove(proveedorServiciosEncontrado);
             _appContext.SaveChange();
         }
     }
