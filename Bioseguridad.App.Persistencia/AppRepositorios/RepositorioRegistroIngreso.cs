@@ -36,13 +36,8 @@ namespace Bioseguridad.App.Persistencia
             var registroIngresoEncontrado = _appContext.registroIngresos.FirstOrDefault(a => a.id==idRegistroIngreso);
             if(personaEncontrado != null)
             {
-                registroIngresoEncontrado.nombre = registroIngreso.nombre;
-                registroIngresoEncontrado.apellidos = registroIngreso.apellidos;
-                registroIngresoEncontrado.identificacion = registroIngreso.identificacion;
-                registroIngresoEncontrado.edad = registroIngreso.edad;
-                registroIngresoEncontrado.profesion = registroIngreso.profesion;
                 registroIngresoEncontrado.fechaIngreso = registroIngreso.fechaIngreso;
-                registroIngresoEncontrado.horaIngreso = persona.fechaIngreso;
+                registroIngresoEncontrado.horaIngreso = registroIngreso.horaIngreso;
 
 
                 _appContext.SaveChange();
