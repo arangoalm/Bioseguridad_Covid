@@ -2,8 +2,7 @@
 
   <ItemGroup>
     
-    <ProjectReference Include="..\Bioseguridad.App.Persistencia\Bioseguridad.App.Persistencia.csproj" />
-    
+       
     <ProjectReference Include="..\Bioseguridad.App.Consola\Bioseguridad.App.Consola.csproj" />
     
   </ItemGroup>
