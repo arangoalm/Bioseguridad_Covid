@@ -38,3 +38,6 @@ E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.A
 E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Bioseguridad.App.Frontend.pdb
 E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Bioseguridad.App.Frontend.genruntimeconfig.cache
 E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Bioseguridad.App.Frontend.csproj.CopyComplete
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Razor\Pages\Saludos\List.cshtml.g.cs
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Razor\Pages\Asesor\List.cshtml.g.cs
+E:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\obj\Debug\net5.0\Razor\Pages\Persona\List.cshtml.g.cs
