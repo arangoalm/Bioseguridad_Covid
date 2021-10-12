@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = Bioseguridad.App.Frontend
-build_property.ProjectDir = e:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Frontend\
+build_property.RootNamespace = Bioseguridad.App.Servicios
+build_property.ProjectDir = e:\misiontic\developer\Proyectos\BioseguridadApp\Bioseguridad.App\Bioseguridad.App.Servicios\

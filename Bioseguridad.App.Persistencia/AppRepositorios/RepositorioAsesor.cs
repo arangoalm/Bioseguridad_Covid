@@ -6,7 +6,7 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioAsesor : IRepositorioAsesor
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioAsesor(AppContext appContext)
         {
             _appContext = appContext;
@@ -20,7 +20,7 @@ namespace Bioseguridad.App.Persistencia
 
         Asesor IRepositorioAsesor.GetAsesor(int idAsesor)
         {
-            var asesorEncontrado = _appContext.asesores.FirstOrDefault(p => a.id ==idAsesor);
+            var asesorEncontrado = _appContext.asesores.FirstOrDefault(p => p.id ==idAsesor);
             return asesorEncontrado;
         }
 //ADD
@@ -33,7 +33,7 @@ namespace Bioseguridad.App.Persistencia
 //Update
         Asesor IRepositorioAsesor.UpdateAsesor(Asesor asesor)
         {
-            var asesorEncontrado = _appContext.asesores.FirstOrDefault(a => a.id==idAsesor);
+            var asesorEncontrado = _appContext.asesores.FirstOrDefault(p => p.id==idAsesor);
             if(asesorEncontrado != null)
             {
                 asesorEncontrado.nombre = asesor.nombre;
@@ -51,7 +51,7 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         bool IRepositorioAsesor.DeleteAsesor(int idAsesor)
         {
-            var asesorEncontrado = _appContext.asesores.FirstOrDefault(a=>a.id==idAsesor);
+            var asesorEncontrado = _appContext.asesores.FirstOrDefault(p=>p.id==idAsesor);
             if (asesorEncontrado == null)
                 return false;
             _appContext.asesores.Remove(asesorEncontrado);

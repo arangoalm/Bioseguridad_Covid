@@ -6,7 +6,7 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioPersona : IRepositorioPersona
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioPersona(AppContext appContext)
         {
             _appContext = appContext;
@@ -20,7 +20,7 @@ namespace Bioseguridad.App.Persistencia
 
         Persona IRepositorioPersona.GetPersona(int idPersona)
         {
-            var personaEncontrado = _appContext.personas.FirstOrDefault(p => a.id ==idPersona);
+            var personaEncontrado = _appContext.personas.FirstOrDefault(p => p.id ==idPersona);
             return personaEncontrado;
         }
 //ADD
@@ -33,7 +33,7 @@ namespace Bioseguridad.App.Persistencia
 //Update
         Persona IRepositorioPersona.UpdatePersona(Persona persona)
         {
-            var personaEncontrado = _appContext.personas.FirstOrDefault(a => a.id==idPersona);
+            var personaEncontrado = _appContext.personas.FirstOrDefault(p => p.id==idPersona);
             if(personaEncontrado != null)
             {
                 personaEncontrado.nombre = persona.nombre;
@@ -51,8 +51,8 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioPersona.DeletePersona(int idPersona)
         {
-            var personaEncontrado = _appContext.personas.FirstOrDefault(a=>a.id==idPersona);
-            if (personasEncontrado == null)
+            var personaEncontrado = _appContext.personas.FirstOrDefault(p => p.id==idPersona);
+            if (personaEncontrado == null)
                 return;
             _appContext.personas.Remove(personaEncontrado);
             _appContext.SaveChange();

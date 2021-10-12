@@ -6,7 +6,7 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioProveedorServicio : IRepositorioProveedorServicio
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioProveedorServicio(AppContext appContext)
         {
             _appContext = appContext;
@@ -20,7 +20,7 @@ namespace Bioseguridad.App.Persistencia
 
         ProveedorServicio IRepositorioProveedorServicio.GetProveedorServicio(int idProveedorServicio)
         {
-            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(p => a.id ==idProveedorServicio);
+            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(p => p.id ==idProveedorServicio);
             return proveedorServicioEncontrado;
         }
 //ADD
@@ -33,7 +33,7 @@ namespace Bioseguridad.App.Persistencia
 //Update
         ProveedorServicio IRepositorioProveedorServicio.UpdateProveedorServicio(ProveedorServicio proveedorServicio)
         {
-            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(a => a.id==idProveedorServicio);
+            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(p => p.id==idProveedorServicio);
             if(proveedorServicioEncontrado != null)
             {
                 proveedorServicio.nombre = proveedorServicio.nombre;
@@ -52,7 +52,7 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioProveedorServicio.DeleteProveedorServicio(int idProveedorServicio)
         {
-            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(a=>a.id==idProveedorServicio);
+            var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(p => p.id==idProveedorServicio);
             if (personaEncontrado == null)
                 return;
             _appContext.proveedorServicios.Remove(proveedorServiciosEncontrado);

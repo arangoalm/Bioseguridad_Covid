@@ -3,7 +3,7 @@
   <ItemGroup>
     
        
-    <ProjectReference Include="..\Bioseguridad.App.Consola\Bioseguridad.App.Consola.csproj" />
+    
     
   </ItemGroup>
 

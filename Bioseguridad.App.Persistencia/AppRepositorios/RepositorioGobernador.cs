@@ -6,7 +6,7 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioGobernador : IRepositorioGobernador
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioGobernador(AppContext appContext)
         {
             _appContext = appContext;
@@ -20,7 +20,7 @@ namespace Bioseguridad.App.Persistencia
 
         Gobernador IRepositorioGobernador.GetGobernador(int idGobernador)
         {
-            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(p => g.id ==idGobernador);
+            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(p => p.id ==idGobernador);
             return gobernadorEncontrado;
         }
 //ADD
@@ -33,7 +33,7 @@ namespace Bioseguridad.App.Persistencia
 //Update
         Gobernador IRepositorioGobernador.UpdateGobernador(Gobernador gobernador)
         {
-            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(g => g.id==idGobernador);
+            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(p => p.id==idGobernador);
             if(gobernadorEncontrado != null)
             {
                 gobernadorEncontrado.nombre = gobernador.nombre;
@@ -51,7 +51,7 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioGobernador.DeleteGobernador(int idGobernador)
         {
-            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(g=>g.id==idGobernador);
+            var gobernadorEncontrado = _appContext.gobernadores.FirstOrDefault(p => p.id==idGobernador);
             if (gobernadorEncontrado == null)
                 return;
             _appContext.gobernadores.Remove(gobernadorEncontrado);

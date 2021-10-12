@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Bioseguridad.App.Consola/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Bioseguridad.App.Consola.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Bioseguridad.App.Consola.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "Bioseguridad.App.Consola/1.0.0": {
-      "type": "project",
-      "path": "../Bioseguridad.App.Consola/Bioseguridad.App.Consola.csproj",
-      "msbuildProject": "../Bioseguridad.App.Consola/Bioseguridad.App.Consola.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Bioseguridad.App.Consola >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\almeiro\\.nuget\\packages\\": {}
@@ -50,11 +31,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "E:\\misiontic\\developer\\Proyectos\\BioseguridadApp\\Bioseguridad.App\\Bioseguridad.App.Consola\\Bioseguridad.App.Consola.csproj": {
-              "projectPath": "E:\\misiontic\\developer\\Proyectos\\BioseguridadApp\\Bioseguridad.App\\Bioseguridad.App.Consola\\Bioseguridad.App.Consola.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,3 +1,4 @@
+using System;
 using Bioseguridad.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,8 +7,8 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioSecretarioDespacho : IRepositorioSecretarioDespacho
     {
-        private readonly AppContext _appContext
-        public SecretarioDespacho(AppContext appContext)
+        private readonly AppContext _appContext;
+        public RepositorioSecretarioDespacho(AppContext appContext)
         {
             _appContext = appContext;
         }
@@ -15,47 +16,48 @@ namespace Bioseguridad.App.Persistencia
 //GET
         IEnumerable<SecretarioDespacho> IRepositorioSecretarioDespacho.GetAllSecretarioDespachos()
         {
-            return _appContext.secretarioDespachos;
+            return _appContext.secretarioDespacho;
         }
 
-        SecretarioDespacho IRepositorioSecretarioDespacho.GetAllSecretarioDespachos(int idSecretarioDespachos)
+        SecretarioDespacho IRepositorioSecretarioDespacho.GetSecretarioDespacho(int idSecretarioDespacho)
         {
-            var secretarioDespachoEncontrado = _appContext.secretarioDespachos.FirstOrDefault(p => s.id ==idSecretarioDespachos);
+            var secretarioDespachoEncontrado = _appContext.secretarioDespacho.FirstOrDefault(p => p.id ==idSecretarioDespacho);
             return secretarioDespachoEncontrado;
         }
 //ADD
-        RegistroIngreso ISecretarioDespachoIngreso.AddSecretarioDespacho(SecretarioDespacho secretarioDespachos)
+        SecretarioDespacho IRepositorioSecretarioDespacho.AddSecretarioDespacho(SecretarioDespacho secretarioDespacho)
         {
-            var secretarioDespachoAdicionado = _appContext.secretarioDespachos.Add(secretarioDespachos);
+            var secretarioDespachoAdicionado = _appContext.secretarioDespacho.Add(secretarioDespacho);
             _appContext.SaveChange();
-            return personaAdicionado.EntityFrameworkCore;
+            return secretarioDespachoAdicionado.EntityFrameworkCore;
         }
 //Update
-        RegistroIngreso ISecretarioDespachoIngreso.UpdateRegistroIngreso(RegistroIngreso persona)
+        SecretarioDespacho IRepositorioSecretarioDespacho.UpdateSecretarioDespacho(SecretarioDespacho secretarioDespacho)
         {
-            var personaEncontrado = _appContext.personaes.FirstOrDefault(a => a.id==idRegistroIngreso);
-            if(personaEncontrado != null)
+            var secretarioDespachoEncontrado = _appContext.secretarioDespacho.FirstOrDefault(p => p.id==idSecretarioDespacho);
+            if(secretarioDespachoEncontrado != null)
             {
-                personaEncontrado.nombre = persona.nombre;
-                personaEncontrado.apellidos = persona.apellidos;
-                personaEncontrado.identificacion = persona.identificacion;
-                personaEncontrado.edad = persona.edad;
-                personaEncontrado.profesion = persona.profesion;
-                personaEncontrado.oficinaVisitada = persona.oficinaVisitada;
+                secretarioDespachoEncontrado.nombre = secretarioDespacho.nombre;
+                secretarioDespachoEncontrado.apellidos = secretarioDespacho.apellidos;
+                secretarioDespachoEncontrado.identificacion = secretarioDespacho.identificacion;
+                secretarioDespachoEncontrado.edad = secretarioDespacho.edad;
+                secretarioDespachoEncontrado.profesion = secretarioDespacho.profesion;
+                secretarioDespachoEncontrado.oficinaVisitada = secretarioDespacho.oficinaVisitada;
 
                 _appContext.SaveChange();
  
             }
-            return personaEncontrado;
+            return secretarioDespachoEncontrado;
         }
 //Delelte        
-        void ISecretarioDespachoIngreso.DeleteRegistroIngreso(int idRegistroIngreso)
+        void IRepositorioSecretarioDespacho.DeleteSecretarioDespacho(int idSecretarioDespacho)
         {
-            var personaEncontrado = _appContext.personaes.FirstOrDefault(a=>a.id==idRegistroIngreso);
-            if (personaEncontrado == null)
-                return;
-            _appContext.personaes.Remove(personaEncontrado);
+            var secretarioDespachoEncontrado = _appContext.secretarioDespacho.FirstOrDefault(p=>p.id==idSecretarioDespacho);
+            if (secretarioDespachoEncontrado == null)
+                return false;
+            _appContext.secretarioDespacho.Remove(secretarioDespachoEncontrado);
             _appContext.SaveChange();
+            return true;
         }
     }
 }

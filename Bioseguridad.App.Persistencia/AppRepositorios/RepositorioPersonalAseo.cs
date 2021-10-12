@@ -6,34 +6,34 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioPersonalAseo : IRepositorioPersonalAseo
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioPersonalAseo(AppContext appContext)
         {
             _appContext = appContext;
         }
 //CRUD
 //GET
-        IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonalAseos()
+        IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonalAseo()
         {
-            return _appContext.personalAseos;
+            return _appContext.personalAseo;
         }
 
         PersonalAseo IRepositorioPersonalAseo.GetPersonalAseo(int idPersonalAseo)
         {
-            var personalAseoEncontrado = _appContext.personalAseos.FirstOrDefault(p => a.id ==idPersonalAseo);
+            var personalAseoEncontrado = _appContext.personalAseo.FirstOrDefault(p => p.id ==idPersonalAseo);
             return personalAseoEncontrado;
         }
 //ADD
         PersonalAseo IRepositorioPersonalAseo.AddPersonalAseo(PersonalAseo personalAseo)
         {
-            var personalAseoAdicionado = _appContext.personalAseos.Add(personalAseo);
+            var personalAseoAdicionado = _appContext.personalAseo.Add(personalAseo);
             _appContext.SaveChange();
             return personalAseoAdicionado.EntityFrameworkCore;
         }
 //Update
         PersonalAseo IRepositorioPersonalAseo.UpdatePersonalAseo(PersonalAseo personalAseo)
         {
-            var personalAseoEncontrado = _appContext.personalAseos.FirstOrDefault(a => a.id==idPersonalAseo);
+            var personalAseoEncontrado = _appContext.personalAseo.FirstOrDefault(p => p.id==idPersonalAseo);
             if(personalAseoEncontrado != null)
             {
                 personaAseoEncontrado.nombre = personalAseo.nombre;
@@ -51,10 +51,10 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioPersonalAseo.DeletePersonalAseo(int idPersonalAseo)
         {
-            var personalAseoEncontrado = _appContext.personalAseos.FirstOrDefault(a=>a.id==idPersonalAseo);
+            var personalAseoEncontrado = _appContext.personalAseos.FirstOrDefault(p => p.id==idPersonalAseo);
             if (personalAseoEncontrado == null)
                 return;
-            _appContext.personalAseos.Remove(personalAseoEncontrado);
+            _appContext.personalAseo.Remove(personalAseoEncontrado);
             _appContext.SaveChange();
         }
     }

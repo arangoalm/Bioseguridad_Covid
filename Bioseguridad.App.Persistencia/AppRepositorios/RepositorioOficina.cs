@@ -6,7 +6,7 @@ namespace Bioseguridad.App.Persistencia
 {
     public class RepositorioOficina : IRepositorioOficina
     {
-        private readonly AppContext _appContext
+        private readonly AppContext _appContext;
         public RepositorioOficina(AppContext appContext)
         {
             _appContext = appContext;
@@ -20,7 +20,7 @@ namespace Bioseguridad.App.Persistencia
 
         Oficina IRepositorioOficina.GetOficina(int idOficina)
         {
-            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(p => o.id ==idOficina);
+            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(p => p.id ==idOficina);
             return oficinaEncontrado;
         }
 //ADD
@@ -33,7 +33,7 @@ namespace Bioseguridad.App.Persistencia
 //Update
         Oficina IRepositorioOficina.UpdateOficina(Oficina oficina)
         {
-            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(o => o.id==idOficina);
+            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(p => p.id==idOficina);
             if(oficinaEncontrado != null)
             {
                 oficinaEncontrado.aforoHora = oficina.aforoHora;
@@ -48,7 +48,7 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioOficina.DeleteOficina(int idOficina)
         {
-            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(o=>o.id==idOficina);
+            var oficinaEncontrado = _appContext.oficinas.FirstOrDefault(p=>p.id==idOficina);
             if (oficinaEncontrado == null)
                 return;
             _appContext.oficinas.Remove(oficinaEncontrado);

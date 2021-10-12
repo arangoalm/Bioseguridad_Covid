@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System;
 using Microsoft.EntityFrameworkCore;
 using Bioseguridad.App.Dominio;
 
