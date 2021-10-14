@@ -36,7 +36,7 @@ namespace Bioseguridad.App.Persistencia
             var personalAseoEncontrado = _appContext.personalAseo.FirstOrDefault(p => p.id==idPersonalAseo);
             if(personalAseoEncontrado != null)
             {
-                personaAseoEncontrado.nombre = personalAseo.nombre;
+                personalAseoEncontrado.nombre = personalAseo.nombre;
                 personalAseoEncontrado.apellidos = personalAseo.apellidos;
                 personalAseoEncontrado.identificacion = personalAseo.identificacion;
                 personalAseoEncontrado.edad = personalAseo.edad;
@@ -51,7 +51,7 @@ namespace Bioseguridad.App.Persistencia
 //Delelte        
         void IRepositorioPersonalAseo.DeletePersonalAseo(int idPersonalAseo)
         {
-            var personalAseoEncontrado = _appContext.personalAseos.FirstOrDefault(p => p.id==idPersonalAseo);
+            var personalAseoEncontrado = _appContext.personalAseo.FirstOrDefault(p => p.id==idPersonalAseo);
             if (personalAseoEncontrado == null)
                 return;
             _appContext.personalAseo.Remove(personalAseoEncontrado);

@@ -18,6 +18,7 @@ namespace Bioseguridad.App.Persistencia
         public DbSet<PersonalAseo> personalAseo {get;set;}
         public DbSet<ProveedorServicio> proveedorServicios {get;set;}
         public DbSet<SecretarioDespacho> secretarioDespacho {get;set;}
+        public DbSet<Saludo> saludos {get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

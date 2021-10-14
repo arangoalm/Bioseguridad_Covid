@@ -75,6 +75,7 @@ namespace Bioseguridad.App.Consola
             {
                 Console.WriteLine(asesor.nombre+" "+asesor.apellidos+" "+asesor.oficinaVisitada);
             }
+        }    
 //EliminarAsesore
         private static void EliminarAsesor(int idAsesor)
         {

@@ -42,20 +42,20 @@ namespace Bioseguridad.App.Persistencia
                 proveedorServicio.edad = proveedorServicio.edad;
                 proveedorServicio.profesion = proveedorServicio.profesion;
                 proveedorServicio.servicioRealizado = proveedorServicio.servicioRealizado;
-                proveedorServicio.unidadServicioRealizadoa = proveedorServicio.unidadServicioRealizadoo;
+                proveedorServicio.unidadServicioRealizado = proveedorServicio.unidadServicioRealizado;
 
                 _appContext.SaveChange();
  
             }
-            return personaEncontrado;
+            return proveedorServicioEncontrado;
         }
 //Delelte        
         void IRepositorioProveedorServicio.DeleteProveedorServicio(int idProveedorServicio)
         {
             var proveedorServicioEncontrado = _appContext.proveedorServicios.FirstOrDefault(p => p.id==idProveedorServicio);
-            if (personaEncontrado == null)
+            if (proveedorServicioEncontrado == null)
                 return;
-            _appContext.proveedorServicios.Remove(proveedorServiciosEncontrado);
+            _appContext.proveedorServicios.Remove(proveedorServicioEncontrado);
             _appContext.SaveChange();
         }
     }

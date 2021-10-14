@@ -1,4 +1,3 @@
-using System;
 using Bioseguridad.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +41,7 @@ namespace Bioseguridad.App.Persistencia
                 secretarioDespachoEncontrado.identificacion = secretarioDespacho.identificacion;
                 secretarioDespachoEncontrado.edad = secretarioDespacho.edad;
                 secretarioDespachoEncontrado.profesion = secretarioDespacho.profesion;
-                secretarioDespachoEncontrado.oficinaVisitada = secretarioDespacho.oficinaVisitada;
+                secretarioDespachoEncontrado.despacho = secretarioDespacho.despacho;
 
                 _appContext.SaveChange();
  

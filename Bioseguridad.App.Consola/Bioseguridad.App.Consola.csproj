@@ -12,7 +12,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bioseguridad.App.Dominio\Bioseguridad.App.Dominio.csproj"/>
-    
+    <ProjectReference Include="..\Bioseguridad.App.Persistencia\Bioseguridad.App.Persistencia.csproj" />
   </ItemGroup>
 </Project>

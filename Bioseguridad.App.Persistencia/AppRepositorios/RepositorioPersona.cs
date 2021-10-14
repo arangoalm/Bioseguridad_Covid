@@ -40,7 +40,7 @@ namespace Bioseguridad.App.Persistencia
                 personaEncontrado.apellidos = persona.apellidos;
                 personaEncontrado.identificacion = persona.identificacion;
                 personaEncontrado.edad = persona.edad;
-                personaEncontrado.profesion = profesor.profesion;
+                personaEncontrado.profesion = persona.profesion;
                 
 
                 _appContext.SaveChange();
